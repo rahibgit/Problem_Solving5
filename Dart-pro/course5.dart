@@ -17,15 +17,15 @@ checkprime isprime(int num) {
   int M = (num ~/ 2);
   for (int i = 2; i <= M; i++) {
     if (num % i == 0) {
-      return checkprime.prime;
+      return checkprime.notprime;
     }
   }
-  return checkprime.notprime;
+  return checkprime.prime;
 }
 
 void printResult(int num) {
   for (int i = 1; i <= num; i++) {
-    if (isprime(i) == checkprime.notprime) {
+    if (isprime(i) == checkprime.prime) {
       print(i);
     }
   }
