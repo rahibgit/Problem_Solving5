@@ -1,32 +1,37 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
-string a()
+
+int input(string Message)
 {
-    string w = "";
-    for (int i = 0; i < 3; i++)
+    int num = 0;
+
+    do
     {
-        w += "e";
-    }
-    return w;
+        cout << Message;
+
+        cin >> num;
+    } while (num <= 0);
+    return num;
 }
 
-string f()
+int RandomNumber(int from, int to)
 {
-    string c = "";
-    for (int i = 0; i <= 3; i++)
-    {
-        /* code */
-        c += a() + "-";
-    }
+    int randNum = rand() % (to - from + 1) + from;
+    return randNum;
+}
 
-    return c;
-}
-void print(string c)
-{
-    cout << "Key: " << c;
-}
 int main()
 {
+    srand((unsigned)time(NULL));
 
-    print(f());
+    int arr[]={1,2,3,4,5};
+   int a=0;
+   int b=4;
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    
+    
 }
