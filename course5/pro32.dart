@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:math';
-import 'course5/pro23.dart';
+import 'pro23.dart';
 
 int input(String Message) {
   int num = 0;

@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'pro29.dart';
+
 
 int input(String Message) {
   int num = 0;
